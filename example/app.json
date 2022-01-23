@@ -1,0 +1,22 @@
+{
+  "name": "react-native-bottom-tab-tour-example",
+  "displayName": "BottomTabTour Example",
+  "expo": {
+    "name": "react-native-bottom-tab-tour-example",
+    "slug": "react-native-bottom-tab-tour-example",
+    "description": "Example app for react-native-bottom-tab-tour",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
