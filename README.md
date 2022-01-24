@@ -1,8 +1,14 @@
 # react-native-bottom-tab-tour
+## _Customizable and delightful tour-guide for your bottom tabs_
 
-tour guide of your bottom tab
+react-native-bottom-tab-tour is a flexible tourguide for your bottom tab navigation.
 
-## Installation
+## Preview
+
+[tour](https://user-images.githubusercontent.com/13269141/150741308-e6315941-ee2a-4976-8e75-ed266139a05e.gif)
+
+## Installation!
+
 
 ```sh
 npm install react-native-bottom-tab-tour
