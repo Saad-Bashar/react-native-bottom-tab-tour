@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import TabTour, { TOOLTIP_DATA } from './components/TabTour';
+import TabTour, { TOOLTIP_DATA } from '../../src/index';
 
 import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';

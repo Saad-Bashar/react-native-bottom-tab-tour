@@ -24,6 +24,7 @@ export interface TabTourProps {
   skipBtnStyle?: ViewStyle;
   opacity?: number;
   opacityViewHeight?: number;
+  opacityColor?: string;
   widthPad?: number;
 }
 
@@ -108,6 +109,7 @@ export default function TabTour({
   nextBtnStyle,
   opacityViewHeight,
   opacity = 0.9,
+  opacityColor = '#0F1C31',
   widthPad,
 }: TabTourProps) {
   const { height, width } = useWindowDimensions();
@@ -184,7 +186,7 @@ export default function TabTour({
           {
             opacity: opacity,
             height: tourViewHeight,
-            backgroundColor: '#0F1C31',
+            backgroundColor: opacityColor,
           },
         ]}
       />
