@@ -1,6 +1,6 @@
 {
   "name": "@saad27/react-native-bottom-tab-tour",
-  "version": "0.1.1 ",
+  "version": "0.1.2",
   "description": "tour guide of your bottom tab",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
