@@ -53,6 +53,9 @@ const App () => {
     </SafeAreaProvider>    
 }
 ```
+## Example
+You can run the example from the example folder. Go to example folder, run yarn and expo run ios/android.
+
 ## Props
 The only prop that is a must for this component is the `data` array prop. Each item in the `data array` will act as an individual view. 
 
@@ -81,7 +84,7 @@ To customize further, there are few more additional props. (The list will grow s
 | nextBtnStyle | ViewStyle | next button styling
 | skipBtnStyle | ViewStyle | skip button styling
 | opacity | number (0-1) | opacity for the background layer
-| opacityViewHeights | number | height of the opacity layer
+| opacityViewHeight | number | height of the opacity layer
 | opacityColor | string | background color of the opacity view
 
 
