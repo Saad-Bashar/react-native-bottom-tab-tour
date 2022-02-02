@@ -7,13 +7,13 @@ react-native-bottom-tab-tour is a flexible tourguide for your bottom tab navigat
 ![tour](https://user-images.githubusercontent.com/13269141/150741308-e6315941-ee2a-4976-8e75-ed266139a05e.gif)
 
 ## Installation
-I will soon publish this in NPM. 
+You should already have `react-native-safe-area-context` installed which comes with the `react-navigation` package. Run the following to install this package.
 ```
-yarn install ....
+yarn install @saad27/react-native-bottom-tab-tour
 ```
 
 ## Usage
-import `react-native-bottom-tab-tour` in your root component, it should be outside of your bottom navigation. like this 
+import `react-native-bottom-tab-tour` in your root component, it should be outside of your navigation. like this 
 ```sh
 import TabTour from react-native-bottom-tab-tour;
 
