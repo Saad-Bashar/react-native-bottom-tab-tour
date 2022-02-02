@@ -57,10 +57,14 @@ const App () => {
 You can run the example from the example folder. Go to example folder, run yarn and expo run ios/android.
 
 ## Props
-The only prop that is a must for this component is the `data` array prop. Each item in the `data array` will act as an individual view. 
+There are 2 compuslory props.
+
+1. `data` - You need to pass the `data` array. Each item in the `data array` will act as an individual view. 
 
 For the tab tour to work properly, you need to give an intro item (which is the first index of the array) and an ending item (which is the last item of the array).
 The intro and ending item appears as a popup in the middle of the screen whereas the other items will be appearing on top of each individual tab.
+
+2. `tabCount` - number of tabs.
 
 Interface of the data object.
 ```sh
