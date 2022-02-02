@@ -242,8 +242,11 @@ export default function TabTour({
         <View
           style={[
             { position: 'absolute' },
-            // @ts-ignore
-            { left: ((thumbIndex * 2 + 1) / 8) * width - 24, bottom: 60 },
+            {
+              // @ts-ignore
+              left: ((thumbIndex * 2 + 1) / (data.length - 2)) * width - 24,
+              bottom: 60,
+            },
           ]}
         >
           <Text style={{ fontSize: 36 }}>👇</Text>
