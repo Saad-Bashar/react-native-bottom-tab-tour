@@ -28,6 +28,7 @@ export interface TabTourProps {
   opacityViewHeight?: number;
   opacityColor?: string;
   widthPad?: number;
+  tabHeight?: number;
 }
 
 export interface TOOLTIP_DATA {
@@ -114,12 +115,14 @@ export default function TabTour({
   opacity = 0.9,
   opacityColor = '#0F1C31',
   widthPad,
+  tabHeight,
 }: TabTourProps) {
   const { height, width } = useWindowDimensions();
   const { bottom } = useSafeAreaInsets();
+  const bottomTabHeight = tabHeight || tabBarHeight();
   const tourViewHeight = opacityViewHeight
     ? opacityViewHeight
-    : height - (tabBarHeight() + bottom);
+    : height - (bottomTabHeight + bottom);
   const WIDTH_PAD = widthPad ?? 50;
   const styleMiddle = useMemo(
     () => ({
