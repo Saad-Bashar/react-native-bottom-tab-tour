@@ -15,8 +15,33 @@ yarn install @saad27/react-native-bottom-tab-tour
 ## Usage
 import `react-native-bottom-tab-tour` in your root component, it should be outside of your navigation. like this 
 ```sh
-import TabTour from react-native-bottom-tab-tour;
+import TabTour from "@saad27/react-native-bottom-tab-tour";
 
+const data = [
+  {
+    title: 'Welcome to the App!\nLets take a tour!', // INTRO ITEM
+  },
+  {
+    title: 'First Tab',
+    description: `This is the first tab.\nYou can see the list of all the tabs.`,
+  },
+  {
+    title: '2nd Tab',
+    description: `This is the second tab.\nYou can see the list of all the tabs.`,
+  },
+  {
+    title: 'Third Tab',
+    description: `This is the second tab.\nYou can see the list of all the tabs.`,
+  },
+  {
+    title: 'Fourth Tab',
+    description: `This is the second tab.\nYou can see the list of all the tabs.`,
+  },
+  {
+    title: 'Ready to go!', // ENDING ITEM
+    description: `We have come to the end of the tour.\nYou can now use the app.`,
+  },
+];
 const App () => {
     const [showTabTour, setShowTabTour] = React.useState(true);
     <SafeAreaProvider>
@@ -29,7 +54,10 @@ const App () => {
 }
 ```
 ## Props
-The only prop that is a must for this component is the `data` array prop. Each item in the `data array` will act as an individual view. The first and last item appears as a popup in the middle of the screen whereas the other items will be appearing on top of each tab.
+The only prop that is a must for this component is the `data` array prop. Each item in the `data array` will act as an individual view. 
+
+For the tab tour to work properly, you need to give an intro item (which is the first index of the array) and an ending item (which is the last item of the array).
+The intro and ending item appears as a popup in the middle of the screen whereas the other items will be appearing on top of each individual tab.
 
 Interface of the data object.
 ```sh
