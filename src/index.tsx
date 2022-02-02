@@ -21,6 +21,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export interface TabTourProps {
   data: TOOLTIP_DATA[];
+  tabCount: number;
   closeTabTour: () => void;
   nextBtnStyle?: ViewStyle;
   skipBtnStyle?: ViewStyle;
@@ -108,6 +109,7 @@ function layoutAnimation({
 
 export default function TabTour({
   data,
+  tabCount,
   closeTabTour,
   skipBtnStyle,
   nextBtnStyle,
@@ -244,7 +246,7 @@ export default function TabTour({
             { position: 'absolute' },
             {
               // @ts-ignore
-              left: ((thumbIndex * 2 + 1) / (data.length - 2)) * width - 24,
+              left: ((thumbIndex * 2 + 1) / (tabCount * 2)) * width - 24,
               bottom: 60,
             },
           ]}

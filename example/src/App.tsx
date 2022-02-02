@@ -46,7 +46,11 @@ export default function App() {
       <SafeAreaProvider>
         <Navigation colorScheme={colorScheme} />
         {showTabTour && (
-          <TabTour data={data} closeTabTour={() => setShowTabTour(false)} />
+          <TabTour
+            tabCount={4}
+            data={data}
+            closeTabTour={() => setShowTabTour(false)}
+          />
         )}
         <StatusBar />
       </SafeAreaProvider>
